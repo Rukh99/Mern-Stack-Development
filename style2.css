@@ -1,0 +1,15 @@
+.hero
+{
+    height:100%;
+    width:100%;
+    background-position: 100% ;
+    background-image: -o-linear-gradient(0,0,0);
+    background-color: blue;
+}
+.form-box
+{
+    width: 380px;
+    height: 200;
+    position:relative ;
+
+}
