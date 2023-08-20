@@ -32,11 +32,11 @@
    
     
    <header class="container "> 
-    <nav class="navbar bg-body-tertiary bg-warning">
+    <nav class="navbar bg-body-tertiary ms-auto bg-warning">
         <div class="container-fluid">
           <a class="navbar-brand"></a>
             <label class="logo"></label>
-            <li class="sub-title"> <img height="30" src="https://images.indianexpress.com/2023/05/jiocinema-top-10-features.jpg" alt=""> JIO CINEMA   </li> 
+            <li class="sub-title"> <img height="20px" width="40px" src="https://images.indianexpress.com/2023/05/jiocinema-top-10-features.jpg" alt=""> JIO CINEMA   </li> 
             <li class="sub-title"> HOME  </li> 
             <li class=" sub-title"> SUBSCRIBE  </li> 
             <li class="sub-title"> FREE </li> 
@@ -52,6 +52,30 @@
           </form>
         </div>
       </nav>
+      <section>
+        <div class="container py-5">
+          <h1 class="display-4 text-center fw-bold mb-5"> MY PROJECTS </h1>
+         <div class="swiper myslider"> 
+              <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> 
+                    <h1 class="text-white">episode 1</h1> </div>
+                  <div class="swiper-slide"> 
+                    <h1 class="text-white">episode 2</h1> </div>
+                  <div class="swiper-slide"> 
+                    <h1 class="text-white">episode 3</h1> </div>
+              </div>
+                  <div class="swiper-pagination"> </div>      
+              </div>
+        </div>
+  
+
+      </section>
+       
+        
+    
+      
+        
+
 <img class="home  display-flex width-10px height:10px"src="https://v3img.voot.com/v3Storage/assets/taaal-1692263388869.jpg">
    </header><br>
     <h1 clas="text-warning fa-bolt"> EPISODES </h1>
@@ -79,7 +103,7 @@
       
 
     </div>
-    <div class="col">
+    <div class="">
       Column
     </div>
     <div class="col">
@@ -88,6 +112,22 @@
   </div>
 </div>
              </footer>
+             <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+             <script>
+              var swiper = new Swiper(".myslider", {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                  },
+              });
+          </script>
+      
+      
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+              integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+              crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/n>pm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
  
 </body>
