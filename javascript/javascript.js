@@ -61,7 +61,10 @@ console.log (4 ** 2);
 
 console.log(25 ** 0.5);
 
+ let name ='rukhsar';
+ let hobby = 'coding';
 
+console. log('my name is ${name} and my hobby is ${hobby});
 
 
 

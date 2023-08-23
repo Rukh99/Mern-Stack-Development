@@ -23,4 +23,17 @@ for (let i=1; i<= 5; i++)
 } 
 
 
+// program to print pattern 
+
+for(let i=1;i<=10; i++)
+{
+    Process.stdout.write(''.repeat(10-i));
+     Process.stdout.write('*'.repeat(10-i));
+
+     console.log(i);
+
+}
+
+
+
 // write a program to check number is prime or not 
