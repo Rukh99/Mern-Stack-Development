@@ -7,7 +7,7 @@ const arr=[
 
 console.log(arr);
 
-const ans5 =arr.map((q) => {return q.split("") [2]});
+const ans5 =arr.map((q) => {return q.split(' ') [0]});
 
 console.log(ans5);
 

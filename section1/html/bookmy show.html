@@ -1,0 +1,91 @@
+la<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK MY SHOW </title>
+</head>
+<style>
+    *{
+        box-sizing:20px;
+        border-radius: 25 px;
+        text-align: center;
+    }
+   body{
+    border-color: black;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+        display: flex;
+        background-color: crimson;
+        background-size: cover;
+    }
+
+    .mycard{
+
+        text-align: center;
+        margin: auto;
+        flex-direction: column;
+        font-weight: 300;
+        width: 30%;
+        border-radius:10px;
+        box-shadow:2px 3px 5px 5px ;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color:white;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-left: 10px ;
+    }
+    .mybtn
+    {
+        color:black;
+        font-weight: 400;
+        font-style: initial;
+        font-family: cursive;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: larger;
+        background-color: red;
+        transition-property: all;
+        transition-duration: 300;
+    
+}
+label{
+    margin-right: 10px;
+}
+
+ 
+</style>
+
+<body>
+    <div class="mycard">
+        
+        <img src="bookmyshow.jpg"width= 70% height="80px">
+        <h1 > BOOK MY SHOW </h1>
+        
+        
+        <br>
+        <label for="name"> <b>NAME</b> </label>
+        
+        <input type="text" placeholder="Enter Name " name="ENTER NAME " ></b><br><br>
+    
+        <label for="no of tickets" ><b> NO OF TICKETS</b></label>
+        <input type="number" placeholder="Enter NO " name="ENTER no of tickets " ></br></br>
+    
+        <label for="SEAT TYPE" ><b> SELECT <b></label>
+        <select>
+            <option> select seat </option>
+            <option>PLATIUM  </option>
+            <option> GOLD </option>
+            <option> silver</option>
+        </select><br>
+
+    
+        <label for= "total price "> <b> TOTAL PRICE </b></label>
+        <input type="number" placeholder="number" name= "total price " ><br>
+    
+        
+<button class="mybtn "> BOOK NOW  </button></br>
+        </label>
+</body>
+</html>

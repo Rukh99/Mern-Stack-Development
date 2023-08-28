@@ -1,0 +1,65 @@
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic" rel="stylesheet" /><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex example</title>
+    <style>
+        .container{
+            height: 544px;
+            width:100%;
+            border:2px solid black;
+            display:flex;
+            flex-direction: row-reverse;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-flow: column wrap;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: stretch;
+            
+
+        }
+        .item
+        {
+                width: 200px;
+height: 100px;
+background-color: tomato;
+border:2px solid black;
+margin: 10 px;
+padding:3px;
+
+
+
+        }
+        #item1
+        {
+            order:2;
+
+
+        }
+        #item2
+            {
+                order:1;
+                flex-grow: 3;
+            }
+
+
+    </style>
+</head>
+<body>
+    <h1> THIS is the flex box tutorial</h1>
+    <div class ="container">
+        <div class ="item " id="item1"> First box</div>
+        <div class ="item " id="item2"> second box</div>
+        <div class ="item " id="item3"> Third box</div>
+        <div class ="item " id="item1"> Fourth box</div>
+        <div class ="item " id="item1"> Fifth box </div>
+        <div class ="item " id="item1"> Sixth Box </div>
+    </div>
+</body>
+</html>
