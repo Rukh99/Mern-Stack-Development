@@ -2,26 +2,23 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <div>
-      <header className="now">
-      <h1>Contact Us</h1>
-      <h5> PlZ FILL THIS FORM  IN A DECENT MANNER </h5>
     
-      </header>
-      
-      <form>
-      <label> FULL NAME </label>
-      <input type="text" name="name" placeholder='ENTER YOUR FULL NAME'      />
-      <br></br>
-      <label> EMAIL</label>
-      <input type="text" name="name" placeholder='ENTER YOUR EMAIL' />
-      <br></br>
-      <label> MESSAGE </label>
-      <input type="text" name="name" placeholder='ENTER YOUR MESSAGE' />
-<br></br>
-<button className="btn btn-primary" onClick={() => {alert("BUTTON was click")}}> click here </button>
-      </form>
-    </div>
+<form>
+<div class="card mx-auto ">
+<div class="card body">
+<label> ENTER YOUR NAME </label>
+<input type="text" class="form-control" placeholder="Enter your name"/>
+<label> ENTER YOUR EMAIL </label>
+<input type="text" class="form-control" placeholder="Enter your email"/>
+
+<label> TYPE YOUR MESSAGE </label>
+
+<textarea class="form-control" rows="3"></textarea>
+<button> SUBMIT </button>
+</div>
+
+</div>
+</form>
   )
 }
 

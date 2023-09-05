@@ -47,6 +47,38 @@ const Navbar = () => {
           ContactUs
         </NavLink>
       </li>
+      <li className="nav-item">
+      <NavLink className="nav-link" to ="/state">
+       StateManagement
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink className="nav-link" to ="/post">
+       post  
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink className="nav-link" to ="/todo">
+       TODO LIST  
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink className="nav-link" to ="/Chat">
+       Chat  
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink className="nav-link" to ="/Productlisting">
+       Productlist 
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink className="nav-link" to ="/Reels">
+       REELS 
+      </NavLink>
+    </li>
+     
+     
        
           
         </ul>

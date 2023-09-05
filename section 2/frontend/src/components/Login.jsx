@@ -5,20 +5,28 @@ import React from 'react'
 
 const Login = () => {
   return (
+    <div>
+    <h1 class ="text-center"> LOGIN </h1>
     <form>
-    <div class= "card"> 
-    <h1>  LOGIN </h1>
-    
-    <label> USER NAME </label><br></br>
-    <input type="text" name="username"/><br></br>
-    <label> PASSWORD </label><br></br>
-      <input type="password" name="password"/><br></br>
-      <button className="btn btn-danger" onClick={() => {alert("BUTTON was click")}}> click here </button>
-    </div>
+    <div class="card mx-auto ">
+    <div class="card-body">
+    <label>USER NAME </label>
+    <input type="text" class="form-control" placeholder="ENTER YOUR NAME "></input>
+    <label>PASSWORD</label>
+    <input type="text" class="form-control" placeholder="ENTER YOUR PASSWORD "></input>
+     <a> Forget password </a> <btn> </btn>
 
+    <button class = "btn btn-danger width:30px" > LOGIN </button><br></br>
+
+    <span> Not a member </span><br></br>
+    <button class = "btn btn-success"> Signup </button>
     
-      
-    </form >
+    
+    </div>
+    
+    </div>
+    </form>
+    </div>
   )
 }
 

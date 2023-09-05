@@ -8,6 +8,12 @@ import Notfound from './Notfound';
 import Navbar from './components/Navbar';
 import EvenHandling from './components/EvenHandling';
 import ContactUs from './components/ContactUs';
+import StateManagement from './components/StateManagement';
+import Post from './components/Post';
+import Todo from './components/Todo';
+import Chat from './components/Chat';
+import Productlisting from './components/Productlisting';
+import Reelslist from './components/dummy';
 
 function App() {
   return (
@@ -23,8 +29,16 @@ function App() {
           
           <Route path="/event" element={<EvenHandling/> }/>
           <Route path="/login" element={<Login/>} />
-          <Route path={"/ContactUs"}element={<ContactUs />} />
-          <Route path={"Signup"} element={<Signup />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/state" element={<StateManagement />}/>
+          <Route path="/Post" element={<Post/>} />
+          <Route path="/todo" element={<Todo/>} />
+          <Route path="/chat" element={<Chat/>} />
+          <Route path="/productlisting" element={<Productlisting/>} />
+        
+        
+
           <Route path="*" element={<Notfound/>}/>
 
           </Routes>
