@@ -13,7 +13,9 @@ import Post from './components/Post';
 import Todo from './components/Todo';
 import Chat from './components/Chat';
 import Productlisting from './components/Productlisting';
-import Reelslist from './components/dummy';
+import ReelsList from './components/dummy';
+import Reels from './components/Reels';
+import Chatting from './components/Chatting';
 
 function App() {
   return (
@@ -36,6 +38,12 @@ function App() {
           <Route path="/todo" element={<Todo/>} />
           <Route path="/chat" element={<Chat/>} />
           <Route path="/productlisting" element={<Productlisting/>} />
+          <Route path="/reels" element={<Reels/>}/>
+          <Route path="/chatting" element={<Chatting/>}/>
+
+          
+
+          
         
         
 

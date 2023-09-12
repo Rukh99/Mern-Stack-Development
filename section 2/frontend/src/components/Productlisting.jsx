@@ -16,7 +16,7 @@ const Productlisting = () => {
   };
   const filterBrand = (e) => {
     const search = e.target.value;
-    const filteredData = productData.filter((product) => { return product.brand.toLowerCase===(search.toLowerCase()) });
+    const filteredData = productData.filter((product) => { return product.brand.toLowerCase === (search.toLowerCase()) });
 
     setProductsArray(filteredData);
 

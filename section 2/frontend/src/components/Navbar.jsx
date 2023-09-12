@@ -77,7 +77,12 @@ const Navbar = () => {
        REELS 
       </NavLink>
     </li>
-     
+    <li className="nav-item">
+    <NavLink className="nav-link" to ="/chatting">
+     CHAT-BOX  
+    </NavLink>
+  </li>
+   
      
        
           

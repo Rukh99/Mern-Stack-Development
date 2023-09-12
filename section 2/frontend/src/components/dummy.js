@@ -1,4 +1,4 @@
-const Reels =[
+const ReelsList=[
 
     {
         id: 1,
@@ -42,4 +42,4 @@ const Reels =[
 
 ]
 
-export default Reels;
+export default ReelsList;
