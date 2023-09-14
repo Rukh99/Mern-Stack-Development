@@ -6,6 +6,7 @@ const url ="mongodb+srv://rukhsarqureshi469:sharukh@cluster0.cjsv2si.mongodb.net
 mongoose.connect(url)
 
 .then((result) => {
+    
     console.log('database connection')
     
 }).catch((err) => {
