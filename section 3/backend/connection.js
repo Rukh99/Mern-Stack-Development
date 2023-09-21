@@ -15,6 +15,4 @@ mongoose.connect(url)
     
 });
 
-
-console.log('another statement')
-
+module.exports = mongoose;

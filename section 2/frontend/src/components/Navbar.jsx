@@ -1,7 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({mycart ,loggedin}) => {
+  
+  console.log(mycart);
+
+  const showloginoption= () =>{
+    if(loggedin)
+    {
+      return(
+        <li className='nav-item'>
+        <button className="btn -btn danger"> Logout </button>
+        </li>
+      )
+    }
+
+  }
+
   return (
     <div>
     <nav className="navbar navbar-expand-lg bg-danger ">   
@@ -82,11 +97,11 @@ const Navbar = () => {
      CHAT-BOX  
     </NavLink>
   </li>
-   
-     
-       
-          
-        </ul>
+  <li className="nav-item">
+    <h4> Cart items :{mycart} </h4>
+  </li>
+   {showloginoption()}
+     </ul>
         <form className="d-flex" role="search">
           <input
             className="form-control me-2"

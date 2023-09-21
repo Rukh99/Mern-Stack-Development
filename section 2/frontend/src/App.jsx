@@ -16,21 +16,25 @@ import Productlisting from './components/Productlisting';
 import ReelsList from './components/dummy';
 import Reels from './components/Reels';
 import Chatting from './components/Chatting';
+import { useState } from 'react';
 
 function App() {
+
+  let Cartitems=5;
+  const [loggedin, setLoggedin] = useState(false)
   return (
     <div>
 
 
 
       <BrowserRouter>
-        <Navbar/>
+        <Navbar mycart={Cartitems} loggedin={loggedin}/>
 <Routes>
           <Route path="/" element={<Home />} />
           
           
           <Route path="/event" element={<EvenHandling/> }/>
-          <Route path="/login" element={<Login/>} />
+          <Route path="/login" element={<Login setLoggedin={setLoggedin}/>} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/state" element={<StateManagement />}/>

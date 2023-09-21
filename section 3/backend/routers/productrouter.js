@@ -1,29 +1,37 @@
-const express =require('express')
+const express = require('express');
+const Model = require('../models/Productmodel');
+const { model } = require('mongoose');
 
-const Router= express.Router();
 
-Router.get('/add', (req, res) => {
-    res.send('response from product add')
+const router =express.Router();
 
-})  
+    router.post("/add",(req,res)=>{
+        console.log(req.body)
+        new Model(req.body).save()
+        .then((result) => {
+            
+            res.json(result);
+        }).catch((err) => {
+            res.json(err);
+            
+        });
 
-Router.get('/getall', (req, res) => {
-    res.send('response from product getall')
-
-}) 
-
-Router.get('/getbyid', (req, res) => {
-    res.send('response from product id get')
+        console.log(req.body);
 
 })
 
-Router.get('/update', (req, res) => {
-    res.send('response from product update')
 
-})  
+router.get("/getall" ,(req,res)=>
+{
+    Model.find({})
+    .then((result) => {
+        res.json(result);
+        
+    }).catch((err) => {
+        res.json(err);
+        
+    });
+})
 
-Router.get('/delete', (req, res) => {
-    res.send('response from  product delete')
 
-})  
-module.exports=Router;
+module.exports =router;
