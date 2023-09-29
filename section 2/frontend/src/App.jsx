@@ -17,33 +17,49 @@ import ReelsList from './components/dummy';
 import Reels from './components/Reels';
 import Chatting from './components/Chatting';
 import { useState } from 'react';
+import { AppProvider } from './AppContext';
+import UserAuth from './UserAuth';
+import Product from './components/Product';
+import Usermanager from './components/Usermanager';
+import { Toaster } from 'react-hot-toast';
+import Updateuser from './components/Updateuser';
 
 function App() {
 
   let Cartitems=5;
-  const [loggedin, setLoggedin] = useState(false)
+ 
   return (
     <div>
+    <Toaster position ="top-right">
+    
+    </Toaster>
 
 
 
       <BrowserRouter>
-        <Navbar mycart={Cartitems} loggedin={loggedin}/>
+      <AppProvider>
+        <Navbar mycart={Cartitems}/>
 <Routes>
           <Route path="/" element={<Home />} />
           
           
           <Route path="/event" element={<EvenHandling/> }/>
-          <Route path="/login" element={<Login setLoggedin={setLoggedin}/>} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/state" element={<StateManagement />}/>
           <Route path="/Post" element={<Post/>} />
-          <Route path="/todo" element={<Todo/>} />
+          <Route path="/todo" element={<UserAuth> <Todo/> </UserAuth>} />
           <Route path="/chat" element={<Chat/>} />
           <Route path="/productlisting" element={<Productlisting/>} />
           <Route path="/reels" element={<Reels/>}/>
           <Route path="/chatting" element={<Chatting/>}/>
+          <Route path="/product" element={<Product/>}/>
+          <Route path="/usermanager" element={<Usermanager/>}/>
+          <Route path="/updateuser/:id" element={<Updateuser/>}/>
+          
+          
+
 
           
 
@@ -54,6 +70,7 @@ function App() {
           <Route path="*" element={<Notfound/>}/>
 
           </Routes>
+          </AppProvider>
       </BrowserRouter>
     </div>
 

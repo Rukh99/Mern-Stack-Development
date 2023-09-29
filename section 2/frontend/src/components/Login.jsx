@@ -1,8 +1,17 @@
 import { useFormik } from "formik";
 import React from "react";
 import Swal from "sweetalert2";
+import useAppContext from "../AppContext";
 
 const Login = () => {
+
+  const{LoggedIn,setLoggedIn} = useAppContext();
+
+  
+
+  
+
+
   const loginForm = useFormik({
     initialValues: {
       email: "",
@@ -25,6 +34,13 @@ const Login = () => {
           icon: 'success',
           title: 'login success'
         })
+
+        setLoggedIn(true);
+
+        const data =  await res.json();
+        console.log(data);
+
+        sessionStorage.setItem('user',JSON.stringify(data));
       }
       else if(res.status == 400)
       {

@@ -1,16 +1,19 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import useAppContext from '../AppContext';
 
-const Navbar = ({mycart ,loggedin}) => {
+const Navbar = ({mycart }) => {
+
+  const{LoggedIn ,setLoggedIn, Logout} = useAppContext();
   
   console.log(mycart);
 
-  const showloginoption= () =>{
-    if(loggedin)
+  const showLoginoption= () =>{
+    if(LoggedIn)
     {
       return(
         <li className='nav-item'>
-        <button className="btn -btn danger"> Logout </button>
+        <button className="btn -btn danger" onClick={Logout}> Logout </button>
         </li>
       )
     }
@@ -76,6 +79,11 @@ const Navbar = ({mycart ,loggedin}) => {
       <NavLink className="nav-link" to ="/todo">
        TODO LIST  
       </NavLink>
+      </li>
+      <li className="nav-item">
+      <NavLink className="nav-link" to ="/usermanager">
+       User Manager 
+      </NavLink>
     </li>
     <li className="nav-item">
       <NavLink className="nav-link" to ="/Chat">
@@ -98,9 +106,14 @@ const Navbar = ({mycart ,loggedin}) => {
     </NavLink>
   </li>
   <li className="nav-item">
+  <NavLink className="nav-link" to ="/Product">
+   Product LIST  
+  </NavLink>
+</li>
+  <li className="nav-item">
     <h4> Cart items :{mycart} </h4>
   </li>
-   {showloginoption()}
+   {showLoginoption()}
      </ul>
         <form className="d-flex" role="search">
           <input

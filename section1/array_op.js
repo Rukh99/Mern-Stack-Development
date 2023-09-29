@@ -1,6 +1,7 @@
 const nums =[24,65,65,89,64,37,56]
 
 for(i=0 ; i<nums.length; i++)
+
 {
     console.log(nums[i]);
 

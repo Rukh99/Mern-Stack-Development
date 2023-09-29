@@ -1,4 +1,4 @@
-const {Schema,models}=require('../connection');
+const {Schema,model}=require('../connection');
 
 const mySchema = new Schema({
     title:String,
@@ -8,4 +8,4 @@ const mySchema = new Schema({
     category:String,
 
 });
-module.exports = models('laptop',mySchema);
+module.exports = model('laptop',mySchema);
